@@ -9,4 +9,33 @@ import { Component } from '@angular/core';
 })
 export class MainMenuComponent {
 
+  constructor() {
+    document.addEventListener('click', (event) => {
+      const target = event.target as HTMLElement;
+
+      if (target.classList.contains('mobile-nav-toggle')) {
+        const navbar = document.querySelector('#navbar');
+        if (navbar) {
+          navbar.classList.toggle('navbar-mobile');
+          const mobileMenu = navbar.querySelector('ul');
+          if (mobileMenu) {
+            mobileMenu.classList.toggle('show');
+          }
+        }
+        target.classList.toggle('bi-list');
+        target.classList.toggle('bi-x');
+      }
+
+      if (target.closest('.navbar') && target.parentElement?.classList.contains('dropdown')) {
+        const navbar = document.querySelector('#navbar');
+        if (navbar && navbar.classList.contains('navbar-mobile')) {
+          event.preventDefault();
+          const dropdown = target.nextElementSibling as HTMLElement;
+          if (dropdown) {
+            dropdown.classList.toggle('dropdown-active');
+          }
+        }
+      }
+    });
+  }
 }
