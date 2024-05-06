@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-main-menu',
@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './main-menu.component.css'
 })
 export class MainMenuComponent {
+
+  isScrolled = false;
 
   constructor() {
     document.addEventListener('click', (event) => {
@@ -36,6 +38,11 @@ export class MainMenuComponent {
           }
         }
       }
-    });
+    });    
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 0;
   }
 }

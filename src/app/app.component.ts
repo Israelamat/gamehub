@@ -6,11 +6,12 @@ import { HeroComponent } from './hero/hero.component';
 import { AboutComponent } from './about/about.component';
 import { CountComponent } from './count/count.component';
 import { PartnersComponent } from './partners/partners.component';
+import { GamesComponent } from './games/games.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, RouterOutlet, MainMenuComponent, HeroComponent, AboutComponent, CountComponent, PartnersComponent],
+  imports: [RouterOutlet, CommonModule, RouterOutlet, MainMenuComponent, HeroComponent, AboutComponent, CountComponent, PartnersComponent, GamesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
