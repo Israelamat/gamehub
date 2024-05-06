@@ -7,11 +7,12 @@ import { AboutComponent } from './about/about.component';
 import { CountComponent } from './count/count.component';
 import { PartnersComponent } from './partners/partners.component';
 import { GamesComponent } from './games/games.component';
+import { RoadmapComponent } from './roadmap/roadmap.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, RouterOutlet, MainMenuComponent, HeroComponent, AboutComponent, CountComponent, PartnersComponent, GamesComponent],
+  imports: [RouterOutlet, CommonModule, RouterOutlet, MainMenuComponent, HeroComponent, AboutComponent, CountComponent, PartnersComponent, GamesComponent, RoadmapComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
