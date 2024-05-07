@@ -11,9 +11,9 @@
 }
 
 .features .content h3 {
-    font-weight: 600;
-    font-size: 32px;
-    color: #2c4964;
+  font-weight: 600;
+  font-size: 32px;
+  color: #2c4964;
 }
 
 .design {
@@ -31,24 +31,41 @@
   flex-direction: column;
 }
 
-.timeline-content {
-  padding: 20px;
-  background: var(--gradient);
-  /* -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-          box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424; */
-  border-radius: 5px;
-  color: black;
-  padding: 1.75rem;
-  transition: 0.4s ease;
-  overflow-wrap: break-word !important;
-  margin: 1rem;
-  margin-bottom: 20px;
-  border-radius: 6px;
+.mac-window {
+  width: 400px;
+  height: 300px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  margin: 0px 20px 20px 20px;
+} 
+
+.mac-window-header {
+  background-color: #dcdcdc;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.timeline-component {
-  margin: 0px 20px 20px 20px;
+.mac-window-header-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
 }
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #28ff77; }
+
+.mac-window-content {
+  padding: 20px;
+}
+
 
 @media screen and (min-width: 768px) {
   .timeline {

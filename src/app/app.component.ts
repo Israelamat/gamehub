@@ -8,11 +8,14 @@ import { CountComponent } from './count/count.component';
 import { PartnersComponent } from './partners/partners.component';
 import { GamesComponent } from './games/games.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
+import { MiddleBannerComponent } from './middle-banner/middle-banner.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, RouterOutlet, MainMenuComponent, HeroComponent, AboutComponent, CountComponent, PartnersComponent, GamesComponent, RoadmapComponent],
+  imports: [RouterOutlet, CommonModule, RouterOutlet, MainMenuComponent, 
+    HeroComponent, AboutComponent, CountComponent, PartnersComponent, GamesComponent, 
+    RoadmapComponent, MiddleBannerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
