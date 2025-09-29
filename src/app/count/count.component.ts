@@ -80,4 +80,15 @@ export class CountComponent implements AfterViewInit {
       }
     }, 10);
   }
+
+
+  // @HostListener('window:scroll', ['$event'])
+  // onScroll(event: Event) {
+  //   if (window.scrollY > 100) {
+  //     this.countDevelopersStop();
+  //     this.countGamesStop();
+  //     this.countHoursStop();
+  //     this.countIssuesStop();
+  //   }
+  // }
 }

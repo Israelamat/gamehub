@@ -9,13 +9,14 @@ import { PartnersComponent } from './partners/partners.component';
 import { GamesComponent } from './games/games.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
 import { MiddleBannerComponent } from './middle-banner/middle-banner.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, CommonModule, RouterOutlet, MainMenuComponent, 
     HeroComponent, AboutComponent, CountComponent, PartnersComponent, GamesComponent, 
-    RoadmapComponent, MiddleBannerComponent],
+    RoadmapComponent, MiddleBannerComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
